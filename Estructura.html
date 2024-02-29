@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TEstructuras CSS</title>
     <!-- Aquí puedes incluir enlaces a tus archivos CSS si los tienes -->
+    
     <style>
         body{
-            background: #f58de8;
+            background: #82d5f8;
             margin: 0;
             padding: 0;
             color: black;
@@ -16,29 +17,57 @@
             box-sizing: border-box;
         }
         nav{
-            background: #f5734b;
+            background: #c8a16a;
+        }
+        header{
+            background: #ff7c25;
+        }
+        .seccion{
+            background: #6e3803;
+        }
+        footer{
+            background: #a04500;
+        }
+        a{
+            color:whitesmoke;
+        }
+        li{
+            text-align: left;
+        }
+        header, .seccion, footer, nav {
             padding: 1em;
-            top: 0;
-            left: 0;
+        }
+        @media screen and (min-width: 600px){
+          /*Aqui inician los estilos de tablet*/
+          nav{
+            float: left;
             width: 20%;
             height: 600px;
         }
-        header,section, footer {
+        header, .seccion, footer {
             height: 200px;
         }
-        section{
-            background: #71caed;
-            padding: 1em;
+        footer{
+            clear: left;
+        }
+          /*Aqui terminan los estilos de tablet*/  
+        }
+        @media screen and (min-width: 1024px){
+          /*Aqui inician los estilos de desktop*/
+          nav{
+            background: #e63131;
+        }
+        header{
+            background: #c11f1f;
+        }
+        .seccion{
+            background: #871616;
         }
         footer{
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            background: #9f5cb0;
-            padding: 1em;
+            background: #b40303;
+          /*Aqui terminan los estilos de desktop*/  
         }
-        </style> 
+</style> 
 </head>
 
 <body>
@@ -54,14 +83,18 @@
                 <li><a href="#">Contacto</a></li>
             </ul>
         </nav>
+
         <section>
-            <h2>Sección 1</h2>
-            <p>Contenido de la primera sección.</p>
+            <section class="seccion">
+                <h2>Sección 1</h2>
+                <p>Contenido de la primera sección.</p>
+            </section>
+            <section class="seccion">
+                <h2>Sección 2</h2>
+                <p>Contenido de la segunda sección.</p>
+            </section>
         </section>
-        <section>
-            <h2>Sección 2</h2>
-            <p>Contenido de la segunda sección.</p>
-        </section>
+ 
     </main>
     
     <footer>
