@@ -39,16 +39,14 @@
         }
         @media screen and (min-width: 600px){
           /*Aqui inician los estilos de tablet*/
+          main{
+            display:flex;
+          }
           nav{
-            display: inline-block;
             width: 20%;
-            height: 600px;
-            vertical-align: top;
         }
         main > section{
-           display: inline-block;
-           width: 74%;
-           vertical-align: top;
+           flex:1;
         }
         header, .seccion, footer {
             height: 200px;
@@ -69,9 +67,6 @@
         footer{
             background: #b40303;
           /*Aqui terminan los estilos de desktop*/  
-        }
-        main > section{
-           width: 76.4%;
         }
 </style> 
 </head>
